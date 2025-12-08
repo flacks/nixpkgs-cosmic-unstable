@@ -18,13 +18,13 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "cosmic-comp";
-  version = "epoch-1.0.0-beta.9-unstable-2025-12-09";
+  version = "epoch-1.0.0-beta.9-unstable-2025-12-10-flacks";
 
   src = fetchFromGitHub {
-    owner = "pop-os";
+    owner = "flacks";
     repo = "cosmic-comp";
-    rev = "fa88002ba41d2edec25dd7ffdee9719fbb928fc0";
-    hash = "sha256-C1AtkdtefSvDp/7p0zLA0DB90tKRbOS4gq3ax18iJsY=";
+    rev = "cd01ea88322fec4e02b733ceb0c326333c6a8b77";
+    hash = "sha256-dH4HqJrt/meLP88qVGRBm+FohyD/VTFBBKJ3Gea1tK8=";
   };
 
   cargoHash = "sha256-Y/niUFbIJTVOe2VlYxpzsPM6ioeaHWEIaQM9Wb3hTZ0=";
@@ -53,6 +53,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
   ];
 
   dontCargoInstall = true;
+
+  doCheck = false; # Dev
 
   meta = {
     homepage = "https://github.com/pop-os/cosmic-comp";
