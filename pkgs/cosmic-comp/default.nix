@@ -23,8 +23,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
   src = fetchFromGitHub {
     owner = "flacks";
     repo = "cosmic-comp";
-    rev = "2a9b9bb5fd211a7569bdce059e2b638e59aff59a";
-    hash = "sha256-oQaragbAMMbusWXnh0YUnRt6hxrqvZCiqs9VZBqqFLs=";
+    rev = "973f9de9862265009a51d31c89ae28e6dd6469a2";
+    hash = "sha256-G4cJkNkCr4cewUOcptV4dE+WI/tMi9VoLb1wx/BiEvM=";
   };
 
   cargoHash = "sha256-cyGG+h9OeQ/EaDQKsAbeq4h5wwWNA5anw56hCJwlrcg=";
