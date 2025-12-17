@@ -3,14 +3,8 @@ inputs: final: prev: {
   cosmic-applibrary = prev.callPackage ./cosmic-applibrary { };
   cosmic-bg = prev.callPackage ./cosmic-bg { };
   cosmic-comp = prev.callPackage ./cosmic-comp { };
-  cosmic-ext-applet-caffeine = prev.callPackage ./cosmic-ext-applet-caffeine { };
   cosmic-ext-applet-clipboard-manager = prev.callPackage ./cosmic-ext-applet-clipboard-manager { };
-  cosmic-ext-applet-external-monitor-brightness =
-    prev.callPackage ./cosmic-ext-applet-external-monitor-brightness
-      { };
   cosmic-edit = prev.callPackage ./cosmic-edit { };
-  cosmic-ext-calculator = prev.callPackage ./cosmic-ext-calculator { };
-  cosmic-ext-ctl = prev.callPackage ./cosmic-ext-ctl { };
   cosmic-ext-tweaks = prev.callPackage ./cosmic-ext-tweaks { };
   cosmic-files = prev.callPackage ./cosmic-files { };
   cosmic-greeter = prev.callPackage ./cosmic-greeter { };
@@ -34,7 +28,4 @@ inputs: final: prev: {
   cosmic-wallpapers = prev.callPackage ./cosmic-wallpapers { };
   cosmic-workspaces-epoch = prev.callPackage ./cosmic-workspaces-epoch { };
   xdg-desktop-portal-cosmic = prev.callPackage ./xdg-desktop-portal-cosmic { };
-
-  # Build for cache
-  cosmic-manager = prev.callPackage "${inputs.cosmic-manager}/cosmic-manager" { };
 }
