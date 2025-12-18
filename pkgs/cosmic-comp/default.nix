@@ -18,7 +18,7 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "cosmic-comp";
-  version = "epoch-1.0.0-unstable-2025-12-15-flacks";
+  version = "epoch-1.0.0-unstable-2025-12-17-flacks";
 
   src = fetchFromGitHub {
     owner = "flacks";
